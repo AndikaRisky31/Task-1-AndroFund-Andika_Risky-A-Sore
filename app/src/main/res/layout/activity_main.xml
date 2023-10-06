@@ -4,15 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#04364A"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/labelUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="212dp"
+        android:text="Username"
+        android:textColor="#DAFFFB"
+        android:textSize="20sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Password"
+        android:textColor="#DAFFFB"
+        android:textSize="20sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertUsername">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/insertUsername"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#176B87"
+        android:paddingLeft="15dp"
+        android:hint="Username"
+        android:textColorHint="#81EBEEF0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelUsername">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/insertPassword"
+        android:layout_width="309dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="#176B87"
+        android:paddingLeft="15dp"
+        android:hint="Password"
+        android:textColorHint="#81EBEEF0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPassword">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:background="#64CCC5"
+        android:hint="Login"
+        android:textColorHint="#DAFFFB"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/insertPassword"
+        app:layout_constraintVertical_bias="0.089">
 
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

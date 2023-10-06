@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Task-1-AndroFund-Andika_Risky-A-Sore</string>
+    <string name="textfragment">Kotak dan teks ini dari berasal dari fragment</string>
 </resources>
